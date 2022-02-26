@@ -1,0 +1,57 @@
+html {
+  overflow-y: scroll;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  padding: 50px;
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+
+#todo-list{
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+#todo-form {
+  margin-bottom: 30px;
+}
+
+button {
+  margin-top: 15px;
+}
+
+.todoDone {
+  text-decoration: line-through;
+}
+.errorLabel {
+  color: darkred;
+  margin-top: 20px;
+}
+
+.checkbox {
+  margin: 10px;
+}
+
+.myRow {
+  max-height: 50px;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
