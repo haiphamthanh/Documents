@@ -1,0 +1,32 @@
+# Create an empty Conda Environment and named "tf24", then activate it and install python 3.8.
+conda create --name tf24
+conda activate tf24
+conda install -y python==3.8.6
+conda install -y pandas matplotlib scikit-learn jupyterlab
+
+
+# Create an empty VirtualEnv Environment and named "virtual", then activate it.
+virtualenv -p python3 env 				#Create virtual evironment with lastest python version
+virtualenv --python=python3.8 env 		#Create virtual evironment with lastest python 3.8
+
+
+# For Anaconda User just this instead of pip
+conda install -c menpo opencv
+
+
+
+# Install Torch (https://www.youtube.com/watch?v=pD_mKNeHwFs)
+# https://pytorch.org/get-started/previous-versions/
+conda create --name pytorch_env
+conda install pytorch -c isuruf/label/pytorch -c conda-forge
+conda install typing-extensions
+conda install -c conda-forge torchvision
+
+# Install keras-contrib
+git clone https://www.github.com/keras-team/keras-contrib.git \
+    && cd keras-contrib \
+    && python convert_to_tf_keras.py \
+    && USE_TF_KERAS=1 python setup.py install
+    
+conda install scikit-image
+https://www.jimbobbennett.io/installing-scikit-learn-on-an-apple-m1/
